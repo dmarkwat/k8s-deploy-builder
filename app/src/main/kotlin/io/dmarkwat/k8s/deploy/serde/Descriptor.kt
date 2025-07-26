@@ -4,3 +4,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Descriptor(val key: String, val values: List<String>)
+
+typealias DescriptorSet = List<Descriptor>

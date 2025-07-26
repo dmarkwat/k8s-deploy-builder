@@ -10,7 +10,7 @@ sealed interface Accessor {
 
         override fun extract(set: DescriptorSet): List<Descriptor> = listOf(apply(set))
 
-        fun apply(set: DescriptorSet): Descriptor = set
+        fun apply(set: DescriptorSet): Descriptor = TODO()
     }
     class Binary(override val key: String) : Accessor {
         override val cardinality: Cardinality = Bounded(2u)
